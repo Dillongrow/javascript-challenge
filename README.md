@@ -14,7 +14,9 @@ We need to write code that will create a table dynamically based upon a "UFO Sig
 
 * Used the UFO dataset provided by Trilogy Education Services in the form of an array of JavaScript objects, wrote code that appends a table to your web page and then added new rows of data for each UFO sighting.
 
-* Used a date form in my HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+* Used a date form in my HTML document and wrote JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+
+
 
 ### Level 2: Multiple Search Categories
 

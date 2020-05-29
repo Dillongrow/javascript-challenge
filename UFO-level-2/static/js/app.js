@@ -12,7 +12,7 @@ tableData.forEach(function(sighting) {
             console.log(key, value);
             var cell = row.append("td");
         cell.text(value);
-         }); 
+         });
 });
 
 

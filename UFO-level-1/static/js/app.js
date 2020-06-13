@@ -3,11 +3,17 @@ var tableData = data;
 
 console.log(tableData);
 
+// get table references
 var tbody = d3.select("tbody");
 
+// Next, loop through each object in the data
+// and append a row and cells for each value in the row
 tableData.forEach(function(sighting) {
         console.log(sighting);
             var row = tbody.append("tr");
+
+            // Loop through each field in the dataRow and add
+            // each value as a table cell (td)
         Object.entries(sighting).forEach(function([key, value]) {
             console.log(key, value);
             var cell = row.append("td");
@@ -15,7 +21,7 @@ tableData.forEach(function(sighting) {
          }); 
 });
 
-
+//get filter reference
 var filter = d3.select("#filter-btn");
 
 filter.on("click", function() {

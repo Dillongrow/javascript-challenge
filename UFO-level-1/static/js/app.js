@@ -24,6 +24,7 @@ tableData.forEach(function(sighting) {
 //get filter reference
 var filter = d3.select("#filter-btn");
 
+//create event
 filter.on("click", function() {
 
     tbody.html("");
@@ -33,14 +34,17 @@ filter.on("click", function() {
 
     console.log(inputValue);
 
+    //add which input values to filter
     var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
 
     console.log(filteredData);
 
+    //pull data for input values
     filteredData.forEach(function(selections) {
 
         console.log(selections);
        
+        //append to table
         var row = tbody.append("tr");
         
         Object.entries(selections).forEach(function([key, value]) {
